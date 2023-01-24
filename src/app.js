@@ -1,7 +1,17 @@
 const nevlista = document.querySelector("#nevlista");
-var nevTomb =["pista", "Karoly", "Mari", "Peti"];
+var nevTomb =[
+    "Pista",
+    "Karoly",
+    "Mari",
+    "Peti",
+    "Guszti",
+    "Béla"];
+
+nevTomb.forEach((nev) => {
+    var li = document.createElement('li');
+    li.textContent = nev ;
+    nevlista.appendChild(li);
+    
+    });
 
 
-var li = document.createElement('li');
-li.textContent = "Valami";
-nevlista .appendChild(li);
